@@ -1,0 +1,110 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:'Poppins',sans-serif;
+    box-sizing:border-box;
+}
+.hero{
+    width: 100%;
+    min-height:100vh;
+    background:white;
+    color:white;
+}
+nav{
+    background:#1a1a1a;
+    width:100%;
+    padding:10px 0px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    position: relative;
+}
+
+.user-pic, .logo{
+    width:40px;
+    border-radius:50%;
+    cursor: pointer;
+    margin:0px 30px;
+}
+nav ul{
+    width:100%;
+    text-align: right;
+}
+nav ul li{
+    display:inline-block;
+    list-style:none;
+    margin:10px 20px;
+}
+nav ul li a{
+    text-decoration:none;
+    color:white;
+}
+
+.sub-menu{
+    align-items: center;
+    padding:10px;
+}
+.sub-menu-wrap{
+    position:absolute;
+    border-radius:0px 0px 5px 5px;
+    background:black;
+    /* padding-left:15px;
+    padding-right:15px; */
+    top:100%;
+    right:5%;
+    width:200px;
+    max-height:0px;
+    overflow:hidden;
+    transition: max-height 0.5s;
+}
+.sub-menu-wrap.open-menu{
+    max-height:400px;
+}
+.user-info{
+    display:flex;
+    align-items: center;
+    justify-items: center;
+    margin-top: 15px;
+
+}
+.user-info h3{
+    font-weight:500;
+}
+.user-info img{
+    width:60px;
+    border-radius:50%;
+    margin-right:15px;
+}
+
+.sub-menu hr{
+    border:0;
+    height:1px;
+    width:100%;
+    background:#ccc;
+    margin:15px 0px;
+
+}
+.sub-menu-link{
+    display:flex;
+    align-items: center;
+    text-decoration:none;
+    color:white;
+    padding:10px 10px 10px 10px;
+}
+.sub-menu-link:hover{
+    background-color: #302b2b;
+}
+.sub-menu-link p{
+    width:100%;
+    text-align: center;
+}
+.sub-menu-link span{
+    font-size:22px;
+    transition: transform 0.5s;
+}
+.sub-menu-link:hover span{
+   transform:translateX(5px);
+}
+.sub-menu-link:hover p{
+    font-weight:300;
+ }
